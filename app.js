@@ -16,6 +16,8 @@ var blogSchema = new mongoose.schema({
 	created: {type: Date, default: Date.now}
 });
 
+var Blog = mongoose.model("Blog", blogSchema);
+
 
 app.listen(3000, function(){
 	console.log("You are now listening to the smooth sounds of port3000");
