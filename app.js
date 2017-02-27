@@ -33,7 +33,6 @@ app.get("/blogs", function(req,res) {
 			res.render("index", {blogs: blogs});
 		}
 	});
-	res.render("index");
 });
 
 
