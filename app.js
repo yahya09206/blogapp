@@ -19,13 +19,11 @@ var blogSchema = new mongoose.Schema({
 
 var Blog = mongoose.model("Blog", blogSchema);
 
-Blog.create({
-	title: "Test Blog",
-	image: "https://images.pexels.com/photos/305070/pexels-photo-305070.jpeg?w=940&h=650&auto=compress&cs=tinysrgb",
-	body: "Very Sexy Car",
-});
-
 //RESTFUL ROUTES
+app.get("/blogs", function(req,res) {
+	res.render("index");
+})
+
 
 app.listen(3000, function(){
 	console.log("You are now listening to the smooth sounds of port3000");
