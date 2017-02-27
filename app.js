@@ -10,7 +10,7 @@ app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended: true}));
 
 //Mongoose/Model Config
-var blogSchema = new mongoose.schema({
+var blogSchema = new mongoose.Schema({
 	title: String,
 	image: String,
 	body: String,
