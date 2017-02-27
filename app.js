@@ -9,6 +9,12 @@ app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended: true}));
 
 //Schema
+var blogSchema = new mongoose.schema({
+	title: String,
+	image: String,
+	body: String,
+	created: {type: Date, default: Date.now}
+});
 
 
 app.listen(3000, function(){
