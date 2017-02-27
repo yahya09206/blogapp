@@ -19,6 +19,12 @@ var blogSchema = new mongoose.Schema({
 
 var Blog = mongoose.model("Blog", blogSchema);
 
+Blog.create({
+	title: "Test Blog",
+	image: "https://images.pexels.com/photos/305070/pexels-photo-305070.jpeg?w=940&h=650&auto=compress&cs=tinysrgb",
+	body: "Very Sexy Car",
+});
+
 //RESTFUL ROUTES
 
 app.listen(3000, function(){
