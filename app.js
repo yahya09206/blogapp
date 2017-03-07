@@ -24,7 +24,7 @@ app.get("/", function(req,res){
 	res.redirect("/blogs");
 });
 
-
+//Index Route
 app.get("/blogs", function(req,res) {
 	Blog.find({}, function(err, blogs) {
 		if(err){
@@ -35,6 +35,10 @@ app.get("/blogs", function(req,res) {
 	});
 });
 
+//New Route/Create
+app.get("/blogs/new", function(req,res){
+	res.render("new");
+});
 
 app.listen(3000, function(){
 	console.log("You are now listening to the smooth sounds of port3000");
