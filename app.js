@@ -57,7 +57,7 @@ app.get("/blogs/:id", function(req,res){
 		if(err){
 			res.redirect("/blogs");
 		}else{
-			
+			res.render("show", {blog: foundBlog});
 		}
 	});
 });
