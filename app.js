@@ -51,6 +51,8 @@ app.post("/blogs", function(req,res){
 	});
 });
 
+//SHOW ROUTE
+
 app.listen(3000, function(){
 	console.log("You are now listening to the smooth sounds of port3000");
 });
