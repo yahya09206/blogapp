@@ -63,7 +63,9 @@ app.get("/blogs/:id", function(req,res){
 });
 
 //Edit Route
-app.
+app.get("/blogs/:id/edit", function(req,res){
+	res.render("edit");
+});
 
 
 
