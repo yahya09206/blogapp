@@ -87,6 +87,9 @@ app.put("/blogs/:id", function(req,res){
 });
 
 //DESTROY ROUTE
+app.delete("/blogs/:id", function(req,res){
+	res.send("You have reached the destroy route");
+});
 
 
 app.listen(3000, function(){
