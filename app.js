@@ -80,6 +80,7 @@ app.get("/blogs/:id/edit", function(req,res){
 
 //Update Route
 app.put("/blogs/:id", function(req,res){
+	req.body.blog.body = req.sanitize(req.body.blog.body);
 	Blog.findByIdAndUpdate(req.params.id, req.body.blog, function(err,updatedBlog){
 		if(err){
 			res.redirect("/blogs");
