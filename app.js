@@ -62,6 +62,13 @@ app.get("/blogs/:id", function(req,res){
 	});
 });
 
+//Edit Route
+app.
+
+
+
+
+
 app.listen(3000, function(){
 	console.log("You are now listening to the smooth sounds of port3000");
 });
