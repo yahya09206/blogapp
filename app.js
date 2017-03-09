@@ -86,7 +86,7 @@ app.put("/blogs/:id", function(req,res){
 	});
 });
 
-
+//DESTROY ROUTE
 
 
 app.listen(3000, function(){
