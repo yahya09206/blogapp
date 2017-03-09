@@ -74,6 +74,9 @@ app.get("/blogs/:id/edit", function(req,res){
 });
 
 //Update Route
+app.put("/blogs/:id", function(req,res){
+	res.send("UPDATE ROUTE");
+});
 
 
 
